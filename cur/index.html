@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <!-- CLASE CONTENEDORA PARA EL MANEJO DE TODA LA PAGINA CON EL CSS -->
+    <div class="container">
+        <header>
+            <!-- LOGO DE MI PERFIL / FUTURA FOTO DE MI PERFIL -->
+            <img src="style/img/logo.svg" alt="MLogo" class="logo">
+
+        <!-- LISTA NO ORDENADA DE OTRA INFORMACION (OTRAS PAGINAS) -->
+
+            <!-- NO RECIBE UNA CLASE POR QUE EN EL CSS SE LO LLAMA CON SU NOMBRE DE ELEMENTO -->
+            <nav>
+
+            <!-- IMAGEN DEL HAMBURGUER MENU / ID(PARA LLAMARLO DESDE EL JS) -->
+                <a href="#" class="hide-desktop">
+                    <img src="style/img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <!-- CSS PARA MOSTRAR EN ESCRITORIO Y OCULTAR EN CELULARES -->
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="btnExit hide-desktop"><img src="style/img/exit.svg" id="exit"  alt="exit"></li>
+                    <li><a href="#yoyo">Quién Soy</a></li>
+                    <li><a href="#blue-container">Formación y Experiencia</a></li>
+                    <li><a href="#gray-container">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- PRIMERA SECCION LUEGO DE LA CABECERA, TIENE MI FOTO Y FRACES INSPIRADORAS / Quién Soy-->
+        <section id="yoyo">
+             <!-- NO SE UTILIZAN LOS UL/OL REQUERIDOS, DEBIDO A QUE LA PRESENTACION DEL CONTENIDO SE ENCUENTRA EN SU TOTALIDAD EN
+            ESE FORMATO, Y PARA NO SE MONOTONO Y ENTREGAR UN CONTENIDO QUE ES EL PRIMERO EN VISUALIZAR, UTILIZO UN H1 PARA DESTACAR Y UN PARRAFO
+            INTRODUCTORIO AL LECTO, PARA PRESENTARME. -->
+            <img src="style/img/me.jpeg" alt="MI FOTO" class="yo">
+
+            <h1>Todo es un constante aprendizaje</h1>
+
+            <p class="subhead">
+                    Hola, querido lector. 
+                Soy Matias Cabido, programador en desarrollo.
+                Cuento con 3 años de experiencia en desarrollo 
+                front-back y actualmente me estoy profesionalizando más.
+            </p>
+
+        </section>
+    </div>
+    <!-- SECCION DE GUSTOS PERSONALES / Formación y Experiencia -->
+    <div class="blue-container" id="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="style/img/icon1.svg" alt="Formación en HTML">
+                    <p>
+                        Llevo 2 años aprendiendo cada vez mas sobre este lenguaje, realice muchos proyectos utilizando este lenguaje Front-End, Realice distintos cursos online que me
+                        permitieron mejorar a lo largo de estos 2 años
+                    </p>
+                </li>
+                <li>
+                    <img src="style/img/icon2.svg" alt="Formación en CSS">
+                    <p>
+                        Llevo 2 años aprendiendo cada vez mas sobre este lenguaje que me permite estilizar los proyectos, actualmente estoy realizando cursos cursos para mejorar este lenguaje tan diverso
+                        de entender y con tantas formas de realizar lo mismo.
+                    </p>
+                </li>
+                <li>
+                    <img src="style/img/icon3.svg" alt="Formación en JS">
+                    <p>
+                        Llevo 2 años desarrollando con este lenguaje, cuento con 3 cursos realizados en distintas plataformas, como platzi, fazt, etc. JavaScript es conciderado uno de los tres pilares de la programacion
+                        Front-End, por lo que es fundamental desarrollarlo, junto con sus paquetes y librerias.
+                        Es un lenguaje que me perimitio desarrollar muchas de las logicas que utilizan mis sitios o aplicativos desarrollados.
+                    </p>
+                </li>
+                <li>
+                    <img src="style/img/icon4.svg" alt="Formación en SQL">
+                    <p>
+                        Llevo 3 años aprendiendo cada vez mas sobre este lenguaje que me permite llevar a cabo el despligue e inteligencia de los datos de mis aplicativos.
+                        Tengo certificados de Platzi, Fazt, Universidad Tecnologica Nacional y actualmente en mi trabajo como desarrollador FullStack, es una de las herramientas
+                        más utilizadas parra llevar a cabo la logica y esctructura de datos de la aplicacción.
+                    </p>
+                </li>
+                <li>
+                    <img src="style/img/icon5.svg" alt="Formación en PHP">
+                    <p>
+                        Llevo 3 años aprendiendo cada vez mas sobre este lenguaje que me permite llevar a cabo la relacion entre los datos y el diseño,
+                        Tengo certificados de Platzi, Fazt, Universidad Tecnologica Nacional y actualmente en mi trabajo como desarrollador FullStack.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECCION REFERENCIAS // DISTINTAS PERSONAS CONTANTO SU EXPERIENCIA SOBRE MI TRABAJO / Portfolio -->
+    <div class="gray-container" id="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="style/img/portfolio.jpg" alt="Fundacion banco de la Provincia de Córdoba">
+                        <blockquote>
+                            Sistema para la gestion de datos de la Fundacion Banco de Córdoba, 
+                            para el manejo de datos de los empleados de la fundación.
+                        </blockquote>
+                        <figcaption>- Fundacion banco de la Provincia de Córdoba</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="style/img/portfolio2.jpg" alt="Fundacion banco de la Provincia de Córdoba">
+                        <blockquote>
+                            Sistema de actualizacion de datos personales de emprendedores del la Fundacion Banco de Córdoba. 
+                            Permite la mantencion de datos y actualización de información de emprendedores de la fundación.
+                        </blockquote>
+                        <figcaption>- Fundacion banco de la Provincia de Córdoba </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- CONTACT SECTION / Contact -->
+    <div class="container" id="contact">
+        <h2>Para llevar tus ideas a otro nivel </h2>
+        <a href="#" class="cta">Contactame</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                 <a href="#"><img src="style/img/logo.svg" alt="logo" class="logo"></a>
+                 <p class="address">General Paz 44 <BR/> Argentina</p>
+                 <ul class="footer-links">
+                    <li><a href="#">Term of Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                 </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/actions.js"></script>
+</body>
+</html>
