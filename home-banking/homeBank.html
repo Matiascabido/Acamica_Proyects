@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>HOME BANKING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="img/logo.png" alt="LOGO"/>
+      <div class="align-left">
+        <span id="nombre">Bienvenido/a</span>
+        <img class="avatar" src="img/avatar.svg" alt="avatar"/>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="menu-container">
+        <h1 class="tu-cuenta">Tu cuenta</h1>
+        <a class="links" href="#extraerModal">Extraer dinero</a>
+        <a class="links" href="#depositarModal">Depositar dinero</a>
+        <a class="links" href="#servicioModal">Pagar servicios</a>
+        <a class="links" href="#transferirModal"> Transferir dinero</a>
+        <a class="links" href="#limiteModal">Cambiar límite de extracción</a>
+      </div>
+      <div class="green-container">
+        <div class="cuenta-info">
+          <p>Saldo en tu cuenta</p>
+          <h3 id="saldo-cuenta">$ </h3>
+          <p id="limite-extraccion">Tu límite de extracción es: $  </p>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div id="extraerModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2 id="Mtitle" >Ingrese Monto a Extraer</h2>
+        <h2 class="signo">$</h2> <input type="text" class="montoIngresar" id="montoIngresar" name="montoIngresar" >
+        <button class="send" onclick="extraerDinero()" >Extraer</button>
+      </div>
+    </div>
+
+    <div id="depositarModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2 >Ingrese Monto a Depositar</h2>
+        <h2 class="signo">$</h2> <input type="text" class="montoIngresar" id="montoDepositar" name="montoDepositar" >
+        <button class="send" onclick="depositarDinero()" >Depositar</button>
+      </div>
+    </div>
+
+    <div id="limiteModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2 >Ingrese limite de Extraccion</h2>
+        <h2 class="signo">$</h2> <input type="text" class="montoIngresar" id="limite" name="limite" >
+        <button class="send" onclick="cambiarLimiteDeExtraccion()">Cambiar Limite</button>
+      </div>
+    </div>
+
+    <div id="servicioModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2> Pagar Servicios </h2>
+        <select class="montoIngresar2" name="service" id="service">
+          <option value="0">Seleccione</option>
+          <option value="1">Agua</option>
+          <option value="2">Luz</option>
+          <option value="3">Gas</option>
+          <option value="4">Telefono</option>
+        </select>
+        <!-- <h2 class="signo">$</h2> <input type="text" class="montoIngresar" id="servicio" name="servicio" > -->
+        <button  class="send2" onclick="pagarServicio()">Pagar</button>
+      </div>
+    </div>
+
+
+    <div id="transferirModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2 >Ingrese Nro Cuenta (22 digitos) </h2>
+        <input type="text" class="montoIngresar3" id="nroCuenta" name="nroCuenta" placeholder="00020..." >
+        <h2 >Ingrese Monto a Transferir</h2>
+        <h2 class="signo">$</h2> <input type="text" class="montoIngresar" id="montoTransferir" name="montoTransferir" >
+        <button class="send" onclick="transferirDinero()">Transferir</button>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/homebanking.js"></script>
+  </body>
+</html>
