@@ -2,9 +2,9 @@
 
 Full Stack Developer career projects approved in Acramica.
 
--CV
--HOME BANKING
--PUZZLE
--PIXELART
--ZOMBIELAND
--BOOKING
+CV,
+HOME BANKING,
+PUZZLE,
+PIXELART,
+ZOMBIELAND,
+BOOKING, 
