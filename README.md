@@ -1,4 +1,10 @@
 # Acamica_Proyects
 
+Full Stack Developer career projects approved in Acramica.
 
-Proyectos del curso "Full Stack Developer" de Acámica.
+-CV
+-HOME BANKING
+-PUZZLE
+-PIXELART
+-ZOMBIELAND
+-BOOKING
