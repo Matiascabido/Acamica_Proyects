@@ -1,6 +1,6 @@
 # Acamica_Proyects
 
-Full Stack Developer career projects approved in Acramica.
+Full Stack Developer career projects approved in Acámica.
 
 CV,
 HOME BANKING,
