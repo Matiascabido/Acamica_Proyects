@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+    <!-- COLUMNA AL 40% DEL ESPACIO DE LA PANTALLA -->
+    <div class="col-40">
+    
+      <div id="titulo">
+          <h3>Rompecabezas</h3>
+      </div>
+
+      <div id="instrucciones">
+        <ul id="lista-instrucciones">
+        </ul>
+      </div>
+
+      <div id="objetivo">
+        <div class="texto-centrado">
+          <h1>Objetivo</h1>
+          <p>Reacomodar las imagenes para obtener una pieza completa</p>
+          <button id="btnP" onClick="rmpP()">Pikachu</button>
+          <button id="btnA" onClick="rmpA()">Adventure Time</button>
+        </div>
+      </div>
+
+      <div id="to-start">
+          <div id="ultimo-mov">
+            <small id="ult">Ultimo movimiento</small>
+            <div id="flecha" class="texto-centrado">
+                <img src="images/u.svg" alt="up" id="up">
+                <img src="images/r.svg" alt="right" id="right">
+                <img src="images/d.svg" alt="down" id="down">
+                <img src="images/l.svg" alt="left" id="left">
+            </div>
+          </div>
+          <h4 id="text" class="texto-centrado">Colocar nombre para empezar</h4>
+          <div id="form-gamer">
+              <input type="text" name="nombre" id="gamer">
+          </div>
+          <button id="btnJugar" onClick="jugar()">Jugar</button>
+      </div>
+
+     
+      
+    </div>
+    <!-- COLUMNA AL 60% DEL ESPACIO DE LA PANTALLA -->
+    <div class="col-60">
+
+      <div id="juego">
+        <div id="pica-pica">
+
+                <img src="images/1.jpg" id='pieza1' alt="img1">
+                <img src="images/2.jpg" id='pieza2' alt="img2">
+                <img src="images/3.jpg" id='pieza3' alt="img3">
+                <img src="images/4.jpg" id='pieza4' alt="img4">
+                <img src="images/5.jpg" id='pieza5' alt="img5">
+                <img src="images/6.jpg" id='pieza6' alt="img6">
+                <img src="images/7.jpg" id='pieza7' alt="img7">
+                <img src="images/8.jpg" id='pieza8' alt="img8">
+                <img src="images/adventure.jpg" id='pieza9' alt="img9">
+        </div>
+        <div id="adventure-time">
+          <div >
+              <img src="images/10.jpg" id='pieza10' alt="img10">
+              <img src="images/20.jpg" id='pieza20' alt="img20">
+              <img src="images/30.jpg" id='pieza30' alt="img30">
+              <img src="images/40.jpg" id='pieza40' alt="img40">
+              <img src="images/50.jpg" id='pieza50' alt="img50">
+              <img src="images/60.jpg" id='pieza60' alt="img60">
+              <img src="images/70.jpg" id='pieza70' alt="img70">
+              <img src="images/80.jpg" id='pieza80' alt="img80">
+              <img src="images/adventure.jpg" id='pieza90' alt="img90">
+          </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="footer">
+      
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
